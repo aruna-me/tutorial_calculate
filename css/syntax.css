@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box; margin: 0; padding: 0;
+    font-family: var(--Inter);
+    font-size: 14px;
+}
+
+:root {
+    --dashed-border: 1px dashed #b2b4bb;
+    --Inter: 'Inter', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+/* Chromium & Safari */
+input[type = "number"]::-webkit-inner-spin-button {
+    display: none;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+::selection {
+    background-color: #AEDEFC;
+    color: black;
+}
+
+input {
+    padding: 5px 15px;
+    border: 1px solid #b2b4bb;
+}
+
+.d-flex button {
+    background-color: #0F0F0F;
+    border: none;
+}
+
+.d-flex button:hover, button:active {
+    background-color: #232D3F !important;
+}
+
+/* Model */
+.modal-content {
+    padding: 20px;
+}
+
+.modal-body {
+    padding: 0;
+}
